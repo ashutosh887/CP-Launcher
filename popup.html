@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1"
+      crossorigin="anonymous"
+    />
+    <title>CP Launcher</title>
+
+    <style>
+      body {
+        font-size: 14px;
+        font-family: "Open Sans", sans-serif;
+        margin: 0;
+        padding: 0;
+        min-height: 100px;
+        width: 400px;
+      }
+
+      h1 {
+        font-size: 24px;
+        font-weight: 800;
+        margin: 0;
+        color: #4ec3f9;
+      }
+
+      a:link,
+      a:visited {
+        color: #000;
+        outline: 0;
+        text-decoration: none;
+      }
+
+      img{
+        width: 30px;
+        height: 30px;
+      }
+
+      .icon {
+        width: 30px;
+        height: 30px;
+      }
+
+      .modal-header {
+        align-items: center;
+        border-bottom: 0.5px solid #dadada;
+      }
+
+      .modal-content {
+        padding: 0 20px;
+      }
+
+      .modal-icons {
+        border-top: 0.5px solid #dadada;
+        height: 50px;
+        width: 100%;
+      }
+
+      .logo {
+        padding: 15px;
+      }
+
+      .icon-logo {
+        vertical-align: text-bottom;
+        margin-right: 10px;
+      }
+
+      .version {
+        color: #444;
+        font-size: 12px;
+      }
+
+      .flex-container {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 20px;
+      }
+
+      .flex {
+        opacity: 1;
+        overflow: hidden;
+        transition: opacity 0.2s ease-in-out;
+        width: 120px;
+      }
+
+      .icon:hover {
+        opacity: 0.7;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="modal-header">
+      <h1 class="logo">
+        <img src="/images/icon.png" alt="CP Launcher" class="icon-logo" />CP
+        Launcher <span class="version">(1.0.0)</span>
+      </h1>
+    </div>
+    <div class="modal-content">
+      <p>Easily access your Competitive Programming Profiles</p>
+    </div>
+    <div class="modal-icons">
+      <!-- Flex Container for all our Websites -->
+      <div class="flex-container">
+        <!-- Leetcode -->
+        <div class="flex">
+          <a href="https://leetcode.com/" target="_blank">
+            <img src="/images/leetcode.png" class="icon">
+          </a>
+        </div>
+
+        <!-- GeeksForGeeks -->
+        <div class="flex">
+          <a href="https://practice.geeksforgeeks.org/topic-tags/" target="_blank">
+            <img src="/images/gfg.png" class="icon">
+          </a>
+        </div>
+
+        <!-- Codechef -->
+        <div class="flex">
+          <a href="https://www.codechef.com/" target="_blank">
+            <img src="/images/codechef.png" class="icon">
+          </a>
+        </div>
+
+        <!-- Hackerrank -->
+        <div class="flex">
+          <a href="https://www.hackerrank.com/" target="_blank">
+            <img src="/images/hackerrank.png" class="icon">
+          </a>
+        </div>
+
+        <!-- Hackerearth -->
+        <div class="flex">
+          <a href="https://www.hackerearth.com/" target="_blank">
+            <img src="/images/hackerearth.png" class="icon">
+          </a>
+        </div>
+
+        <!-- Codeforces -->
+        <div class="flex">
+          <a href="https://codeforces.com/" target="_blank">
+            <img src="/images/codeforces.png" class="icon">
+          </a>
+        </div>
+      </div>
+    </div>
+    
+    <!-- JS File for the Extension -->
+    <script src="/popup.js">
+      // CP Launcher Chrome Extension by Ashutosh Jha...
+      //  https://github.com/ashutosh887
+    </script>
+  </body>
+</html>
+
