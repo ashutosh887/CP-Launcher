@@ -1,4 +1,4 @@
-# CP-Chrome-Extension
+# CP-Launcher : Google Chrome Extension
 An extension which helps you to easily access your Competitive Programming Profiles...
 </br>
 </br>
